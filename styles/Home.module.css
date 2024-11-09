@@ -84,3 +84,19 @@
 .albumCard p {
   margin: 5px 0;
 }
+
+/* Styles supplémentaires */
+
+@media (max-width: 768px) {
+  .mainContent {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .rightPanel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+}
