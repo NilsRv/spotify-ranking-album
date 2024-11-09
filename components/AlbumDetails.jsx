@@ -46,7 +46,7 @@ export default function AlbumDetails({ album, onClose, accessToken }) {
   if (!albumInfo) {
     return (
       <div className={styles.albumDetails}>
-        <p>Chargement des détails de l'album...</p>
+        <p>Chargement des détails de l&#39;album...</p>
       </div>
     );
   }
