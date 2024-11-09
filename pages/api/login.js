@@ -7,13 +7,14 @@ export default function handler(req, res) {
   const redirect_uri = process.env.REDIRECT_URI;
   const scope = 'user-top-read';
 
+  console.log('redirect_uri: ', redirect_uri );
   res.redirect(
     'https://accounts.spotify.com/authorize?' +
       querystring.stringify({
         response_type: 'code',
         client_id: client_id,
         scope: scope,
-        redirect_uri: redirect_uri,
+        redirect_uri: redirect_uri
       })
   );
 }

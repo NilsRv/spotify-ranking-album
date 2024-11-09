@@ -31,7 +31,7 @@ export default async function handler(req, res) {
       access_token,
       refresh_token,
     });
-
+    console.log('redirect_uri: ', redirect_uri );
     res.redirect('/?' + params.toString());
   } catch (error) {
     console.error('Error in /api/callback:', error.response?.data || error.message);
