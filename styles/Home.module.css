@@ -1,0 +1,87 @@
+/* styles/Home.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainContent {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Contenu de gauche */
+.leftContent {
+  flex: 1;
+  overflow: auto; /* Permet le défilement vertical */
+  padding: 20px;
+}
+
+/* Panneau de droite */
+.rightPanel {
+  overflow: auto;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.albumContainer {
+  flex: 1;
+  padding: 20px;
+}
+
+.loginPrompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginPrompt h2 {
+  margin-bottom: 20px;
+}
+
+.loginPrompt button {
+  padding: 10px 20px;
+  background-color: #1db954;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.loginPrompt button:hover {
+  background-color: #17a44d;
+}
+
+.albumGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.albumCard {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.albumCard:hover {
+  transform: scale(1.05);
+}
+
+.albumCard img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.albumCard h3 {
+  margin: 10px 0 5px;
+}
+
+.albumCard p {
+  margin: 5px 0;
+}
+

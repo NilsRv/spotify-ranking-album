@@ -1,0 +1,73 @@
+/* styles/AlbumDetails.module.css */
+
+/* Album Details */
+.albumDetails {
+  width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.albumDetails img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.albumDetails h2 {
+  margin-top: 20px;
+}
+
+.albumDetails p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.albumDetails h3 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.albumDetails ul {
+  list-style: none;
+  padding: 0;
+}
+
+.albumDetails li {
+  margin: 5px 0;
+  color: #333;
+}
+
+/* Close Button */
+.closeButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #333;
+}
+
+.closeButton:hover {
+  color: #000;
+}
+
+/* Default Album Details */
+.default {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.defaultImage {
+  width: 80%;
+  opacity: 0.5;
+}
+
+.default h2 {
+  margin-top: 20px;
+  color: #888;
+}
